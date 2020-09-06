@@ -1,0 +1,25 @@
+.slogan {
+    font-family: 'Pacifico', cursive;
+    font-size: 8em;
+    line-height: 1;
+    background: url("https://media.giphy.com/media/UJVED7GZPDr56/giphy.gif");
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    user-select: none;
+}
+
+.subtitle {
+    color: greenyellow;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 992px) {
+    .slogan {
+        font-size: 4em;
+    }
+
+    .subtitle {
+        font-size: .8em;
+    }
+}

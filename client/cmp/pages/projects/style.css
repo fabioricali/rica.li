@@ -1,0 +1,28 @@
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    display: inline-block;
+    margin: 2px;
+}
+
+.list a {
+    display: block;
+    padding: 10px;
+    background: greenyellow;
+    transition: .3s all;
+    border-radius: 8px;
+}
+
+.list a:link, .list a:visited{
+    color: #1f0c70;
+    text-decoration: none;
+}
+
+.list a:hover {
+    color: greenyellow;
+    background: #1f0c70;
+}

@@ -1,0 +1,113 @@
+header {
+    background: linear-gradient(128deg, #1f0c70, #6c609e, #000f3c);
+    background-size: 600% 600%;
+    animation: AnimationName 8s ease infinite;
+    color: #fff;
+    padding: 20px 0;
+    opacity: 0.4;
+    transition: .3s all;
+    font-size: 12px;
+    letter-spacing: 3px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header:hover {
+    opacity: .6;
+    letter-spacing: 5px;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0 11%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0 11%}
+}
+@keyframes AnimationName {
+    0%{background-position:0 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0 11%}
+}
+
+header img{
+    width: 250px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    border-right: 1px solid #fff;
+    text-transform: uppercase;
+}
+
+nav li:last-child {
+    border: none;
+}
+
+nav a:link, nav a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: lightcyan;
+}
+
+:global nav a.router-link-active{
+    border-bottom: 2px solid #00BCD4;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 412px){
+
+    header {
+        padding: 0;
+    }
+
+    header:hover {
+        opacity: 0.4;
+        letter-spacing: 3px;
+    }
+
+    nav li{
+        display: block;
+        padding: 0;
+        border-right: none;
+        border-bottom: 1px solid #ffffff21;
+        text-transform: uppercase;
+    }
+
+    nav a{
+        display: block;
+        padding: 10px;
+    }
+
+    :global nav a.router-link-active{
+        border-right: 10px solid #00BCD4;
+        border-left: 10px solid #00BCD4;
+        border-bottom: none;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-height: 576px) {
+
+    header {
+        position: inherit;
+    }
+
+}
