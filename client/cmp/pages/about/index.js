@@ -9,7 +9,7 @@ const cfg = {
                  <h1>About</h1>
                  <img class="${style.avatar}" src="https://avatars0.githubusercontent.com/u/12598754?s=800" />
                  <h3 class="${style.name}">Fabio Ricali</h3>
-                 <p>I work as web developer and web designer since 2003 based in Sicily.<br>I'm a lover of nature, technology and the sky.</p>
+                 <p>I work as web developer and web designer since 2003 based in Sicily.<br>I'm a lover of nature, steampunk art, technology and the sky.</p>
             </div>
         `
     }
